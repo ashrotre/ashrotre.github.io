@@ -3,10 +3,10 @@ body {
 }
 
 .navbar {
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	text-align: center;
-	padding: 8px 8px;
+	padding: 0px 0px;
 	font-size: 44px;
 	color: #ffffff;
 	background-color: #000000;
@@ -15,35 +15,31 @@ body {
 	width: 100%;
 }
 
-.navbar ul {
-	list-style-type: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-family: 'Encode Sans Expanded', sans-serif;
+.navbar table {
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	overflow: hidden;
+	background-color: #545454;
+	text-align: center;
 }
 
-.navbar li {
-	padding: 6px 6px;
-	display: inline;
-	float: center;
-}
-
-.navbar li a {
+.navbar table a {
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.navbar li a:hover {
+.navbar table a:hover {
 	color: #c0c0c0;
 }
-
+	
 .main {
-	font-family: 'Encode Sans Expanded', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin-top: 96px;
 	margin-bottom: 48px;
+}
+
+.main p {
+	font-size: 16px;
 }
 
 .linkbutton {
@@ -62,7 +58,7 @@ body {
 }
 
 .footer {
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	text-align: center;
 	padding: 8px 8px;
