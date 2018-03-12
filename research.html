@@ -24,17 +24,63 @@
 <div class="main" align="center">
 	<br/>
 	<table width="900px" border="0" cellspacing="2px" cellpadding="2px">
-		<tr padding="8px">
-			<td colspan="2">
-				<h2 align="center">Visual quality assessment of reconstructed background images</h2>
+		<tr padding=8px">
+			<td>
+				<h2 align="center">Full Reference Objective Quality Assessment for Reconstructed Background Images</h2>
 				<p align="justify">
-				<b></b>A clean background image is of great importance in multiple applications such as video surveillance, object tracking and context-based video encoding, but acquiring a clean background image in public areas is seldom possible. Many algorithms have been developed to initialize the background from videos and images. This research presents a database consisting of 13 different scenes that can be used for benchmarking the performance of background initialization algorithms. We also conducted a subjective study on the perceptual quality of background images that are reconstructed using existing background initialization algorithms. The obtained subjective scores were used to evaluate existing image quality metrics and their capability in predicting the perceived quality of reconstructed background images.
+				With an increased interest in applications that require a clean background image, such as video surveillance, object tracking, street view imaging and location-based services on web-based maps, multiple algorithms have been developed to reconstruct a background image from cluttered scenes. Traditionally, statistical measures and existing image quality techniques have been applied for evaluating the quality of the reconstructed background images. Though these quality assessment methods have been widely used in the past, their performance in evaluating the perceived quality of the reconstructed background image has not been verified. In this work, we discuss the shortcomings in existing metrics and propose a full reference Reconstructed Background image Quality Index (RBQI) that combines color and structural information at multiple scales using a probability summation model to predict the perceived quality in the reconstructed background image given a reference image. To compare the performance of the proposed quality index with existing image quality assessment measures, we construct two different datasets consisting of reconstructed background images and corresponding subjective scores. The quality assessment measures are evaluated by correlating their objective scores with human subjective ratings. The correlation results show that the proposed RBQI outperforms all the existing approaches. Additionally, the constructed datasets and the corresponding subjective scores provide a benchmark to evaluate the performance of future metrics that are developed to evaluate the perceived quality of reconstructed background images.
 				</p>
 			</td>
 		</tr>
 		<tr padding="8px">
 			<td colspan="2">
-				<p style="font-size:12px" align="center">
+				<p style="font-size:14px" align="center">
+				<br/>Fig. 1: Reference background images for different scenes in the Reconstructed Background Quality (ReBaQ) Dataset. Each reference background image corresponds to a captured scene background without foreground objects.
+				</p>
+				<center>
+				<img width="800px" src="images/rbqifig1.png"/>
+				</center>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<p style="font-size:14px" align="center">
+				<br/>Fig. 2: Reference background images for different scenes in the SBMNet based Reconstructed Background Quality (S-ReBaQ) Dataset. Each reference background image corresponds to a captured scene background without foreground objects.
+				</p>
+				<center>
+				<img width="800px" src="images/rbqifig2.png"/>
+				</center>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<p style="font-size:14px" align="center">
+				<br/>Fig. 3: Scatter plots of the MOS vs. Metric Scores on different datasets.
+				</p>
+				<center>
+				<img width="800px" src="images/rbqifig3.png"/>
+				</center>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<hr/>
+				<hr/>
+			</td>
+		</tr>
+	</table>
+	<table width="900px" border="0" cellspacing="2px" cellpadding="2px">
+		<tr padding="8px">
+			<td colspan="2">
+				<h2 align="center">Visual quality assessment of reconstructed background images</h2>
+				<p align="justify">
+				A clean background image is of great importance in multiple applications such as video surveillance, object tracking and context-based video encoding, but acquiring a clean background image in public areas is seldom possible. Many algorithms have been developed to initialize the background from videos and images. This research presents a database consisting of 13 different scenes that can be used for benchmarking the performance of background initialization algorithms. We also conducted a subjective study on the perceptual quality of background images that are reconstructed using existing background initialization algorithms. The obtained subjective scores were used to evaluate existing image quality metrics and their capability in predicting the perceived quality of reconstructed background images.
+				</p>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<p style="font-size:14px" align="center">
 				<br/>Figure 1: Different scenes from the constructed database. For each of these scenes, a sequence of multiple images including various foreground objects, is also captured.
 				</p>
 			</td>
@@ -59,7 +105,7 @@
 		</tr>
 		<tr padding="8px">
 			<td colspan="2">
-				<p style="font-size:12px" align="center">
+				<p style="font-size:14px" align="center">
 				<br/>Figure 2: Subjective test graphical user interface. 
 				</p>
 			</td>
@@ -85,28 +131,47 @@
 		<tr padding="8px">
 			<td colspan="2">
 				<hr/>
+				<hr/>
 			</td>
 		</tr>
 	</table>
-<!--
-	<table width="900px" border="0" cellspacing="16px" cellpadding="8px">
+	<table width="900px" border="0" cellspacing="2px" cellpadding="2px">
 		<tr padding=8px">
 			<td>
 				<h2 align="center">Background recovery from multiple images</h2>
+				<p align="justify">
+In this research, we propose an algorithm to extract the background by removing unwanted objects from multiple images  of  a  scene  with  varying  illumination  conditions  captured by a stationary camera. The variations in illumination from scene to scene are due to the possible presence of different illumination sources and different foreground objects causing different shadows and reflections in each scene. While this causes the background to be non-stationary when considering pixel intensities, the algorithm  exploits  the  fact  that  the  background  is  static while  the  foreground  is  non-stationary  in  a  given  feature space. The extracted foreground regions are treated as holes and  are  filled  from  one  of  the  available  images  where  the  background  at  the  corresponding  position  is  un-occluded.   The  background  pixels  for  filling  the  holes  are  selected   based  on  a  cost  function  that  attempts  to  maximize  the  naturalness   and   perceived   quality   of   the   reconstructed background.  
+				</p>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<p style="font-size:14px" align="center">
+				<br/>Fig 1: Dataset 1, consisting of five images taken from a stationary camera
+				</p>
+				<center>
+				<img width="880px" src="images/bgrecfig1.png"/>
+				</center>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<p style="font-size:14px" align="center">
+				<br/>Fig 2: (a), (b), (c) Recovered background using existing algorithms; (d) Recovered background using the proposed algorithm.
+				</p>
+				<center>
+				<img width="880px" src="images/bgrecfig2.png"/>
+				</center>
+			</td>
+		</tr>
+		<tr padding="8px">
+			<td colspan="2">
+				<hr/>
 				<hr/>
 			</td>
 		</tr>
 	</table>
 	
-	<table width="900px" border="0" cellspacing="16px" cellpadding="8px">
-		<tr padding=8px">
-			<td>
-				<h2 align="center">Full Reference Objective Quality Assessment for Reconstructed Background Images</h2>
-				<hr/>
-			</td>
-		</tr>
-	</table>
--->
 </div>
 
 <div class="footer" align="center">
